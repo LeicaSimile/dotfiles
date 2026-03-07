@@ -1,0 +1,7 @@
+[general]
+import = [
+  "~/.config/alacritty/Whimsy.toml"
+]
+
+[window]
+padding = {x=16, y=10}
