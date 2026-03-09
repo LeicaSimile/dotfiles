@@ -8,14 +8,12 @@ function run {
 # Automount drives
 run udiskie
 
-# Audio
-run pipewire 
-run pipewire-pulse
-run wireplumber
-
 # Network manager
 run nm-applet
 
 # Night mode
 redshift -P -O 3000K
+
+# SSH agent
+run ssh-agent -s
 
