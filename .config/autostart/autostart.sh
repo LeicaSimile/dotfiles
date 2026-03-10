@@ -12,8 +12,5 @@ run udiskie
 run nm-applet
 
 # Night mode
-redshift -P -O 3000K
-
-# SSH agent
-run ssh-agent -s
+gammastep -P -O 3000K
 

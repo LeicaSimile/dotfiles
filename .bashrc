@@ -14,4 +14,4 @@ export PS1="\[\033[01;35m\][\u@\h\[\033[01;37m\] \W\[\033[01;35m\]]\$\[\033[00m\
 # Shortcut for Flatpak Protontricks
 alias protontricks="flatpak run com.github.Matoking.protontricks"
 alias protontricks-launch="flatpak run --command=protontricks-launch com.github.Matoking.protontricks"
-
+alias startniri="dbus-run-session niri --session"
