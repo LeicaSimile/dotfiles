@@ -157,7 +157,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        off
+        //off
 
         // How many logical pixels the ring extends out from the windows.
         width 4
@@ -168,7 +168,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
+        active-color "#cf8aba"
 
         // Color of the ring on inactive monitors.
         //
@@ -198,8 +198,8 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
 
         width 8
-        active-color "#cfa0fa"
-        inactive-color "#62587a"
+        active-color "#ffd09a"
+        inactive-color "#52687a"
 
         // Color of the border around windows that request your attention.
         urgent-color "#9b0000"
@@ -257,8 +257,8 @@ layout {
     struts {
         // left 64
         // right 64
-        // top 64
-        // bottom 64
+        // top 16
+        // bottom 16
     }
 }
 
@@ -612,5 +612,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
     // Reload waybar
-    Mod+Shift+R { spawn-sh "killall waybar && waybar"; }
+    Mod+Shift+R { spawn-sh "killall waybar; waybar"; }
 }

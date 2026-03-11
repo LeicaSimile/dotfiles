@@ -1,7 +1,8 @@
-@define-color bg-clr #62587a;
-@define-color text-clr #ccaacc;
-@define-color main-bg-clr #cfa0fa;
-@define-color main-text-clr #664288;
+@define-color bg-clr #52687a;
+@define-color text-clr #ccbbaa;
+@define-color main-bg-clr #ffd09a;
+@define-color main-text-clr @bg-clr;
+@define-color accent-bg-clr #aa567a;
 
 * {
   margin: 0;
@@ -17,7 +18,7 @@ window#waybar {
 
 
 label.module:hover {
-  color: #fbf;
+  color: #fbc;
 }
 
 .modules-center {
@@ -26,7 +27,7 @@ label.module:hover {
 }
 
 .modules-right {
-  background: #446688;
+  background: @accent-bg-clr;
 }
 
 .module {
@@ -34,7 +35,6 @@ label.module:hover {
   padding: 0 10px 0 10px;
 }
 
-#mpris {
-  margin: 0 0 0 10px;
+#pulseaudio {
+  min-width: 90px;
 }
-
