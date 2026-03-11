@@ -1,24 +1,40 @@
 @define-color bg-clr #62587a;
 @define-color text-clr #ccaacc;
+@define-color main-bg-clr #cfa0fa;
+@define-color main-text-clr #664288;
 
 * {
+  margin: 0;
+  padding: 0;
   font-family: "CatV 6x12 9", sans-serif;
   font-size: 13pt;
-  color: @text-clr;
 }
 
 window#waybar {
   background: @bg-clr;
+  color: @text-clr;
 }
 
 
-label.module {
-  margin: 0 0 0 20px;
-}
 label.module:hover {
   color: #fbf;
+}
+
+.modules-center {
+  background: @main-bg-clr;
+  color: @main-text-clr;
+}
+
+.modules-right {
+  background: #446688;
+}
+
+.module {
+  margin: 0;
+  padding: 0 10px 0 10px;
 }
 
 #mpris {
   margin: 0 0 0 10px;
 }
+
