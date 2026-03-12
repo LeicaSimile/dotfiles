@@ -4,7 +4,7 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": [
 	"pulseaudio",
-	"mpris"
+	"mpd"
     ],
     "modules-center": [
 	"niri/window"
@@ -35,10 +35,9 @@
         },
         "on-click": "pavucontrol"
     },
-    "mpris": {
-	"format": "{artist} - \"{title}\" <span font_variant='small-caps' font_size='small'>[{position}/{length}]</span>   ",
-	"artist-len": 24,
-	"title-len": 32,
+    "mpd": {
+	"format": "{albumArtist} - \"{title}\" <span font_variant='small-caps' font_size='small'>[{elapsedTime:%M:%S}/{totalTime:%M:%S}]</span>   ",
+	"smooth-scrolling-threshold": 36,
 	"format-disconnected": " --",
         "interval": 1,
         "status-icons": {
