@@ -1,0 +1,7 @@
+song_columns_list_format = (22)[]{a} (40)[white]{t|f:Title} (28)[magenta]{b} (7f)[green]{l}
+song_status_format = {{%a - }"%t"{ <%b> (%y)}|{%f}}
+
+
+colors_enabled = yes
+external_editor = vim
+

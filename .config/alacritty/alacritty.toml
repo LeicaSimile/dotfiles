@@ -1,6 +1,6 @@
 [general]
 import = [
-  "~/.config/alacritty/Whimsy.toml"
+  "~/.config/alacritty/TYP.toml"
 ]
 
 [window]

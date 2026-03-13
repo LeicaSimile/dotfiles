@@ -8,7 +8,7 @@ function y() {
 }
 
 # Set terminal colour scheme
-export LS_COLORS="di=01;95:mi=01;30;41"
+export LS_COLORS="mi=01;30;41"
 export PS1="\[\033[01;35m\][\u@\h\[\033[01;37m\] \W\[\033[01;35m\]]\$\[\033[00m\] "
 
 # Shortcut for Flatpak Protontricks

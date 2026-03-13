@@ -36,14 +36,14 @@
         "on-click": "pavucontrol"
     },
     "mpd": {
-	"format": "{albumArtist} - \"{title}\" <span font_variant='small-caps' font_size='small'>[{elapsedTime:%M:%S}/{totalTime:%M:%S}]</span>   ",
-	"smooth-scrolling-threshold": 36,
+	"format": "{artist} - \"{title}\" <span font_variant='small-caps' font_size='small'>[{elapsedTime:%M:%S}/{totalTime:%M:%S}]</span>   ",
 	"format-disconnected": " --",
         "interval": 1,
         "status-icons": {
             "paused": "",
             "playing": ""
-        }
+        },
+	"on-click": "mpc toggle"
     },
     "niri/window": {
         "rewrite": {
