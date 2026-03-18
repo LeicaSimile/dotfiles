@@ -41,6 +41,10 @@ label.module:hover {
   padding: 0 10px 0 10px;
 }
 
+.module#temperature,
+.module#custom-gpu_temp {
+  padding: 0 20px 0 0;
+}
 
 window#waybar.audiobar {
   background: transparent;

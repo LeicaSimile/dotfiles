@@ -12,6 +12,9 @@
     "modules-right": [
         "network",
         "cpu",
+	"temperature",
+	"custom/gpu_usage",
+	"custom/gpu_temp",
         "memory",
         "clock",
         "tray"
@@ -69,11 +72,26 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+	"tooltip-format": "CPU temp"
+    },
+    "custom/gpu_usage": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu | tail -n 1 | tr -d %",
+	"format": "GPU {}%",
+	"return-type": "",
+	"interval": 10
+    },
+    "custom/gpu_temp": {
+	"exec": "nvidia-smi --query-gpu=temperature.gpu | tail -n 1 | tr -d %",
+	"format": "{}°C {icon}",
+        "format-icons": [""],
+	"tooltip-format": "GPU temp",
+	"return-type": "",
+	"interval": 10
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
