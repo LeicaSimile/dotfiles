@@ -5,6 +5,13 @@ function run {
   fi
 }
 
+# Bar
+run waybar
+
+# Music
+run mpd
+run mpdas
+
 # Automount drives
 run udiskie
 
