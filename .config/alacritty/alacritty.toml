@@ -5,3 +5,5 @@ import = [
 
 [window]
 padding = {x=16, y=10}
+decorations = "None"
+

@@ -29,5 +29,5 @@ background = '#29283b'
 foreground = '#b3b0d6'
 
 [colors.selection]
-background = '#3d3c58'
-text = '#ffffff'
+background = '#ffd09a'
+text = '#29283b'
