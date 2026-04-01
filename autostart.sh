@@ -15,7 +15,7 @@ run udiskie
 #run nm-applet
 
 # Night mode
-gammastep -P -O 3000K
+run gammastep -P -O 3000K
 
 # Music
 run mpd
