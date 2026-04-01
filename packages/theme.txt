@@ -18,4 +18,4 @@ rofi
 alacritty
 steam
 brave
-
+mako
