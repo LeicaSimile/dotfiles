@@ -121,6 +121,12 @@ window-rule {
     open-focused true
     default-floating-position x=0 y=0 relative-to="top-right"
 }
+window-rule {
+    match app-id="Windscribe"
+    open-floating true
+    open-focused true
+    default-floating-position x=0 y=0 relative-to="bottom-right"
+}
 
 binds {
     // shows a list of important hotkeys.
@@ -375,6 +381,6 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 
-    // Reload waybar
-    Mod+Shift+R { spawn-sh "killall waybar; waybar"; }
+    // Reload waybar & gammastep
+    Mod+Shift+R { spawn-sh "killall waybar; killall gammastep; waybar & disown; gammastep -P -O 3000K & disown"; }
 }
