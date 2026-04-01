@@ -21,20 +21,12 @@
     ],
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "x {format_source}",
+        "format": "<span font_size='15pt'>{icon}</span> {volume}% {format_source}",
+        "format-muted": "󰸈 {format_source}",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "default": ["󱄠"]
         },
         "on-click": "pavucontrol"
     },
@@ -60,15 +52,14 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"format": "{:%b %d | %H:%M}",
-        "format-alt": "{:%H:%M}"
+        "format": "{:%H:%M} 󰫃"
     },
     "cpu": {
         "format": "CPU {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "MEM {}%"
+        "format": "MEM {used}<small>G</small>"
     },
     "temperature": {
         "hwmon-path-abs": "/sys/devices/pci0000:00/0000:00:18.3/hwmon",
@@ -95,12 +86,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ({signalStrength}%) 󰒢",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-disconnected": "Disconnected 󰞃",
+        "format-alt": "{ipaddr}/{cidr}"
     }
 },
 {
