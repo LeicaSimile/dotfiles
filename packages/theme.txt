@@ -12,10 +12,9 @@ mpd
 mpdas
 mpc
 ncmpcpp
-yazi
 https://github.com/vinceliuice/Vimix-cursors.git
 rofi
 alacritty
-steam
-brave
 mako
+refind
+gnu-efi

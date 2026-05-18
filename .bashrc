@@ -11,6 +11,9 @@ function y() {
 export LS_COLORS="mi=01;30;41"
 export PS1="\[\033[01;35m\][\u@\h\[\033[01;37m\] \W\[\033[01;35m\]]\$\[\033[00m\] "
 
+# Set default editor
+export EDITOR=/usr/bin/vim
+
 # Shortcut for Flatpak Protontricks
 alias protontricks="flatpak run com.github.Matoking.protontricks"
 alias protontricks-launch="flatpak run --command=protontricks-launch com.github.Matoking.protontricks"
